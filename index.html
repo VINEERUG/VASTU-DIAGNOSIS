@@ -709,11 +709,11 @@
             // --- This block is for all cards EXCEPT Lucky ones ---
             let numberDisplayClass = ''; 
             if (title === 'Mobile Number Analysis') {
-                numberDisplayClass = 'text-4xl md:text-5xl';
+                numberDisplayClass = 'text-3xl md:text-4xl';
             } else if (isText) {
                 numberDisplayClass = 'text-4xl md:text-5xl';
             } else {
-                numberDisplayClass = 'text-4xl md:text-5xl';
+                numberDisplayClass = 'text-5xl md:text-6xl';
             }
             
             let extraStyles = '';
@@ -740,7 +740,7 @@
             // --- NEW LOGIC for Lucky Cards ---
             if (title === 'Lucky Numbers' || title === 'Lucky Colors') {
                 // Set a new, smaller, consistent font size for both cards
-                const valueDisplayClass = 'text-3xl'; 
+                const valueDisplayClass = 'text-2xl md:text-3xl'; 
                 // We don't want a min-height for these cards, let them size naturally.
                 // Also, the text might wrap, so remove 'nowrap' style.
                 extraStyles = ''; 
